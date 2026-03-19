@@ -1,0 +1,33 @@
+[project]
+name = "cogs-189"
+version = "0.1.0"
+description = "COGS 189 Final Project: Decoding Musical Preference from EEG"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.10.8",
+    "mne>=1.11.0",
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "shap>=0.51.0",
+    "torch>=2.6.0",
+    "tqdm>=4.67.3",
+    "xgboost>=3.2.0",
+    "xlrd>=2.0.2",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
